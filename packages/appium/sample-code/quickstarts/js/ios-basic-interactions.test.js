@@ -20,10 +20,12 @@ const wdOpts = {
 
 async function runTest() {
   const driver = await remote(wdOpts);
-  const elementId = await driver.findElement('accessibility id', 'TextField1');
+
+   const elementId = await driver.findElement('accessibility id', 'IntegerA');
+   console.log('abc',elementId);
   driver.elementSendKeys(elementId.ELEMENT, 'Hello World!');
 
-  const elementValue = await driver.findElement('accessibility id', 'TextField1');
+  const elementValue = await driver.findElement('accessibility id', 'IntegerA');
   const attr = await driver.getElementAttribute(elementValue.ELEMENT, 'value')
   if (attr !== 'Hello World!') {
     throw new Error(`Attr doesn't match: ${attr}`);
