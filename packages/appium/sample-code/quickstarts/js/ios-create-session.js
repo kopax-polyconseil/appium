@@ -5,10 +5,10 @@ const { IOS_ZIP_PATH } = process.env;
 
 const capabilities = {
   platformName: 'iOS',
-  app: IOS_ZIP_PATH || resolve(__dirname, '..', '..', 'apps', 'TestApp.app.zip'),
-  automationName: 'XCUITest',
-  deviceName: process.env.IOS_DEVICE_NAME || 'iPhone 6s',
-  platformVersion: process.env.IOS_PLATFORM_VERSION || '12.1',
+  'appium:app': IOS_ZIP_PATH || resolve(__dirname, '..', '..', 'apps', 'TestApp.app.zip'),
+  'appium:automationName': 'XCUITest',
+  'appium:deviceName': process.env.IOS_DEVICE_NAME || 'iPhone 6s',
+  'appium:platformVersion': process.env.IOS_PLATFORM_VERSION || '12.1',
 };
 
 const wdOpts = {
