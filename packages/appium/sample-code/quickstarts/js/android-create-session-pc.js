@@ -1,5 +1,5 @@
-const {resolve} = require('path');
-const {remote} = require('webdriverio');
+const { resolve } = require('path');
+const { remote } = require('webdriverio');
 
 const { ANDROID_APK_PATH } = process.env;
 

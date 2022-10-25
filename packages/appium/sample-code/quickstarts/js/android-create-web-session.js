@@ -1,5 +1,5 @@
-const {resolve} = require('path')
-const {remote} = require('webdriverio');
+const { resolve } = require('path');
+const { remote } = require('webdriverio');
 
 const { CHROME_DRIVER_PATH } = process.env;
 
